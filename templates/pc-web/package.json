@@ -3,20 +3,17 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
-		"ant-design-pro": "^2.1.1",
-		"antd": "^3.11.2",
-		"mango-motion-web": "0.0.4",
 		"mango-web": "^0.0.2",
-		"rc-texty": "^0.2.0",
-		"react": "^16.7.0",
-		"react-dom": "^16.6.3"
+		"mango-motion-web": "0.0.4"
 	},
 	"scripts": {
 		"start": "node scripts/start.js",
 		"build": "node scripts/build.js",
-		"build:dev": "node scripts/build.js",
+		"build:dev": "node scripts/build.js dev",
+		"build:sit": "node scripts/build.js sit",
 		"test": "node scripts/test.js",
 		"lint": "./node_modules/.bin/eslint js",
+		"module": "node ./scripts/develop/newmodule/newmodule",
 		"precommit": "lint-staged"
 	},
 	"lint-staged": {

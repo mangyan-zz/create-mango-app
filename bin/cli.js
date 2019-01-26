@@ -36,9 +36,8 @@ inquirer.prompt([
 		message: '选择你想创建什么类型的无线前端应用',
 		type: 'list',
 		choices: [
-			'pc-web',
+			'web',
 			'react-native',
-			'webapp',
 			'mini-program',
 		],
 	}
@@ -52,7 +51,7 @@ inquirer.prompt([
 				});
 			break;
 		//如果想要创建的是pc-web
-		case 'pc-web':
+		case 'web':
 			runGenerator(require('../lib/PCWebGenerator'));
 			break;
 		case 'plugin':

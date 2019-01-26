@@ -2,14 +2,10 @@
  * 应用入口文件
  */
 import React from 'react';
-import { mango } from 'mango-web';
-import 'antd/dist/antd.css';
-import 'ant-design-pro/dist/ant-design-pro.css';
+import { mango, createLoading } from 'mango-web';
 
 import AppModel from './AppModel';
 import { RouterConfig } from './config/RouterConfig';
-
-import { createLoading } from 'mango-web';
 
 const app = mango({
 	onError(error) {
