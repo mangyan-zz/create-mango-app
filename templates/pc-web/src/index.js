@@ -1,7 +1,6 @@
 /**
  * 应用入口文件
  */
-import React from 'react';
 import { mango, createLoading } from 'mango-web';
 
 import AppModel from './AppModel';

@@ -10,10 +10,6 @@ import Themes from './assets/Themes';
 @connect()
 class App extends Component {
 
-	constructor(props) {
-		super(props);
-	}
-
 	componentDidMount() {
 	}
 

@@ -1,6 +1,5 @@
 /**
- * Created by zhongzihuan on 2018/12/25.
- * 模块管理
+ * 界面model
  */
 export default {
 	namespace: '',

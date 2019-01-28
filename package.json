@@ -1,12 +1,11 @@
 {
   "name": "create-mango-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Creates a mango application using the command line.",
   "bin": {
     "create-mango-app": "./bin/cli.js"
   },
   "scripts": {
-    "prepublishOnly": "np --no-cleanup --yolo --no-publish"
   },
   "dependencies": {
     "chalk": "^2.4.1",
@@ -29,7 +28,7 @@
   },
   "homepage": "",
   "authors": [
-    ""
+    "mangyan"
   ],
   "bugs": {
     "url": ""

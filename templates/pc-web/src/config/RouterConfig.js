@@ -4,7 +4,7 @@
 import React from 'react';
 import { Router, Route, Switch } from 'mango-web/router';
 
-import { ModuleRouter as NewModuleRouter } from '../modules/new';
+import { ModuleRouter as DemoModuleRouter } from '../modules/demo';
 import { RouterUtils } from 'mango-web';
 import App from '../App';
 import ErrorPage from '../layout/ErrorPage';
@@ -26,7 +26,7 @@ const RouterConfig = ({history, app}) => {
 				<Route exact path="/" component={App}/>
 
 				{/*Demo模块*/}
-				<Route path="/new" render={(props) => (<NewModuleRouter {...props} app={app}/>)}/>
+				<Route path="/new" render={(props) => (<DemoModuleRouter {...props} app={app}/>)}/>
 
 				{/*Error界面*/}
 				<Route path="/ErrorPage" component={ErrorPage}/>

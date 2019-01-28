@@ -1,5 +1,4 @@
 /**
- * Created by mangyan on 2018/11/29.
  * 异常结果页
  */
 import React, { Component } from 'react';
@@ -43,7 +42,7 @@ class ErrorPage extends Component {
 		return (
 			<div style={styles.container}>
 				<div style={styles.imgBlock}>
-					<img style={styles.imgEle} src={pageImg}/>
+					<img style={styles.imgEle} src={pageImg} alt="img"/>
 				</div>
 				<div style={styles.content}>
 					<h1>{pageTitle}</h1>

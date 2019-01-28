@@ -1,8 +1,11 @@
+/**
+ *
+ */
 import React, { PureComponent } from 'react';
 import { connect } from 'mango-web';
 
 @connect(({namespace}) => ({namespace}))
-class ToNameFragment extends PureComponent {
+class ToNamePage extends PureComponent {
 
 	constructor(props) {
 		super(props);
@@ -22,4 +25,4 @@ const styles = {
 	container: {},
 };
 
-export default;
+export default ToNamePage;
