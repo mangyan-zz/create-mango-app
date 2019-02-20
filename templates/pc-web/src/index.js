@@ -3,8 +3,8 @@
  */
 import { mango, createLoading } from 'mango-web';
 
-import AppModel from './AppModel';
-import { RouterConfig } from './config/RouterConfig';
+import AppModel from './global/AppModel';
+import { RouterConfig } from './RouterConfig';
 
 const app = mango({
 	onError(error) {

@@ -87,6 +87,7 @@ function runGenerator(Generator) {
 			clipboardy.writeSync(`cd ${args._[0]}`);
 			console.log('📋  Copied to clipboard, just use Ctrl+V');
 		}
+
 		console.log('✨  File Generate Done');
 	});
 }

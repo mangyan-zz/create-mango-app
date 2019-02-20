@@ -8,7 +8,7 @@ class HeaderComponent extends Component {
   render() {
     return (
       <div>
-        sdsdsd
+        头部组件
       </div>
     )
   }

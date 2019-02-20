@@ -1,3 +1,6 @@
+/**
+ * 注释
+ */
 import React, { PureComponent } from 'react';
 import { connect } from 'mango-web';
 

@@ -1,0 +1,3 @@
+rootProject.name = 'rnMango'
+
+include ':app'

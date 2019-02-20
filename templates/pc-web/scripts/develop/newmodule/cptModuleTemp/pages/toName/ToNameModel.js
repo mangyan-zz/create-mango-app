@@ -1,5 +1,4 @@
 /**
- * Created by zhongzihuan on 2018/12/25.
  * 模块管理
  */
 export default {
@@ -8,13 +7,17 @@ export default {
 		data: [], //查询所有模块
 	},
 
-	reducers: {
+	reducers: {},
 
-	},
+	effects: {},
 
-	effects: {
-
-	},
-
-	subscriptions: {}
+	subscriptions: {
+		setup({dispatch, history}) {
+			return history.listen(({pathname, query}) => {
+				if (pathname === '') {
+					//页面进入执行
+				}
+			});
+		}
+	}
 };

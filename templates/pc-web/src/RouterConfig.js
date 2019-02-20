@@ -4,10 +4,10 @@
 import React from 'react';
 import { Router, Route, Switch } from 'mango-web/router';
 
-import { ModuleRouter as DemoModuleRouter } from '../modules/demo';
+import { ModuleRouter as DemoModuleRouter } from './modules/demo';
 import { RouterUtils } from 'mango-web';
-import App from '../App';
-import ErrorPage from '../layout/ErrorPage';
+import App from './App';
+import ErrorPage from './layout/ErrorPage';
 
 let appHistory = null;
 
