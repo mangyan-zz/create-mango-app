@@ -1,5 +1,5 @@
-import { ModuleRouter } from './ModuleRouter';
+import ModuleRouter from './ModuleRouter';
 
 export {
-  ModuleRouter,
+	ModuleRouter,
 };

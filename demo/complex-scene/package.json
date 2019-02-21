@@ -1,0 +1,48 @@
+{
+	"name": "mango-web-app",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"mango-web": "^0.0.2",
+		"mango-motion-web": "0.0.4"
+	},
+	"scripts": {
+		"start": "node scripts/start.js",
+		"build": "node scripts/build.js",
+		"build:dev": "node scripts/build.js dev",
+		"build:sit": "node scripts/build.js sit",
+		"test": "node scripts/test.js",
+		"lint": "./node_modules/.bin/eslint js",
+		"module": "node ./scripts/develop/newmodule/newmodule",
+		"precommit": "lint-staged"
+	},
+	"lint-staged": {
+		"js/**/*.js": [
+			"eslint",
+			"git add"
+		]
+	},
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	],
+	"babel": {
+		"presets": [
+			"react-app"
+		],
+		"plugins": [
+			[
+				"@babel/plugin-proposal-decorators",
+				{
+					"legacy": true
+				}
+			]
+		]
+	},
+	"devDependencies": {
+		"less": "^2.7.3",
+		"less-loader": "^4.1.0"
+	}
+}

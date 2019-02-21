@@ -1,5 +1,5 @@
 /node_modules
-/templates/**/node_modules
+/**/node_modules
 /templates/**/npm-debug.log*
 /templates/**/yarn-error.log
 /templates/**/yarn.lock
@@ -8,3 +8,4 @@
 /templates/block/pages
 /.idea
 /yarn.lock
+/demo
