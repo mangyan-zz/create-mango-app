@@ -11,7 +11,7 @@ import { connect } from 'mango-web'
 
 import { Form, Input, Button, Select, Row, Col, Popover, Progress, message } from 'antd'
 import Strings from '../../../Strings'
-import { Dimens, MangoUtils, RouterUtils } from 'mango-web'
+import { Dimens, Mango, RouterUtils } from 'mango-web'
 import Themes from '../../../../../assets/Themes'
 
 const FormItem = Form.Item
@@ -45,7 +45,7 @@ class Register extends Component {
     const account = form.getFieldValue('mail')
     if (registryRsp) {
       if (registryRsp.code == 1) {
-        MangoUtils.dispatch(this, 'user_entry', 'pureChangeFragment', {account, showFragmentId: 3})
+        Mango.dispatch(this, 'user_entry', 'pureChangeFragment', {account, showFragmentId: 3})
       } else {
         console.log('====' + JSON.stringify(registryRsp))
         if (!submitting) {
@@ -71,7 +71,7 @@ class Register extends Component {
           event.preventDefault()
           validateFields({force: true}, (err, values) => {
             if (!err) {
-              MangoUtils.dispatch(this, 'user_entry', 'onRegistrySubmit', {...values, prefix})
+              Mango.dispatch(this, 'user_entry', 'onRegistrySubmit', {...values, prefix})
             }
           })
         }}>
@@ -117,7 +117,7 @@ class Register extends Component {
                   {
                     validator: (rule, value, callback) => {
                       const {form} = this.props
-                      MangoUtils.dispatch(this, 'user_entry', 'pureCheckPassword', {form, value, callback})
+                      Mango.dispatch(this, 'user_entry', 'pureCheckPassword', {form, value, callback})
                     }
                   },
                 ],
@@ -159,7 +159,7 @@ class Register extends Component {
                 size="large"
                 value={prefix}
                 onChange={(value) => {
-                  MangoUtils.dispatch(this, 'user_entry', 'pureChangePrefix', {value})
+                  Mango.dispatch(this, 'user_entry', 'pureChangePrefix', {value})
                 }}
                 style={{width: '20%'}}
               >
@@ -210,7 +210,7 @@ class Register extends Component {
                   size="large"
                   disabled={count}
                   onClick={() => {
-                    MangoUtils.dispatch(this, 'user_entry', 'onGetCaptcha',)
+                    Mango.dispatch(this, 'user_entry', 'onGetCaptcha',)
                   }}
                 >
                   {count && count > 0
@@ -235,7 +235,7 @@ class Register extends Component {
 
             <p style={styles.login}
                onClick={() => {
-                 MangoUtils.dispatch(this, 'user_entry', 'pureChangeFragment', {showFragmentId: 1})
+                 Mango.dispatch(this, 'user_entry', 'pureChangeFragment', {showFragmentId: 1})
                }}>
               {Strings.signIn}
             </p>

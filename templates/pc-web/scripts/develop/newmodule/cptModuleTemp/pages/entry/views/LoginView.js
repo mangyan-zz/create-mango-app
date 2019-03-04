@@ -7,7 +7,7 @@
  * （4）联名登录
  */
 import React, { Component } from 'react';
-import { connect, Dimens, MangoUtils, RouterUtils } from 'mango-web';
+import { connect, Dimens, Mango, RouterUtils } from 'mango-web';
 
 import { Alert, Button, Checkbox, Col, Form, Input, Row, Tabs, message } from 'antd';
 import Strings from '../../../conf/Strings';
@@ -46,7 +46,7 @@ class LoginView extends Component {
 					// event&&event.preventDefault();
 					validateFields({force: true}, (err, values) => {
 						if (!err) {
-							MangoUtils.dispatch(this, ModuleCode.userPublic, 'onLogin', {req: values});
+							Mango.dispatch(this, ModuleCode.userPublic, 'onLogin', {req: values});
 						}
 					});
 				}}>
@@ -55,7 +55,7 @@ class LoginView extends Component {
 					animated={false}
 					defaultActiveKey={'tab_username'}
 					onChange={(key) => {
-						MangoUtils.dispatch(this, 'user_entry', 'pureChangeTab', {type: key});
+						Mango.dispatch(this, 'user_entry', 'pureChangeTab', {type: key});
 					}}
 				>
 					{/*用户名密码登录*/}

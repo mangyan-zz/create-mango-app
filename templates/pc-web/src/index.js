@@ -1,12 +1,12 @@
 /**
  * 应用入口文件
  */
-import { mango, createLoading } from 'mango-web';
+import { MangoCreator, createLoading } from 'mango-web';
 
 import AppModel from './global/AppModel';
 import { RouterConfig } from './RouterConfig';
 
-const app = mango({
+const app = MangoCreator({
 	onError(error) {
 		console.log('应用层统一错误处理');
 	},
