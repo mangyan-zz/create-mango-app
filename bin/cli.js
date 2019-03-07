@@ -54,8 +54,8 @@ inquirer.prompt([
 		case 'web':
 			runGenerator(require('../lib/PCWebGenerator'));
 			break;
-		case 'plugin':
-			runGenerator(require('../lib/PluginGenerator'));
+		case 'react-native':
+			runGenerator(require('../lib/AppGenerator'));
 			break;
 		case 'library':
 			runGenerator(require('../lib/LibraryGenerator'));

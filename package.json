@@ -1,6 +1,6 @@
 {
   "name": "create-mango-app",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Creates a mango application using the command line.",
   "bin": {
     "create-mango-app": "./bin/cli.js"
