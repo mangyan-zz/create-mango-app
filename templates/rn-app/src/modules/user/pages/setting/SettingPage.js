@@ -18,6 +18,7 @@ class SettingPage extends PureComponent {
 	}
 
 	render() {
+
 		return (
 			<View style={styles.container}>
 
