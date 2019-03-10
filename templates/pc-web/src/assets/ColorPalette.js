@@ -1,5 +1,4 @@
 /**
- * Created by mangyan on 2018/12/7.
  * 调色盘
  */
 const ColorPalette = {

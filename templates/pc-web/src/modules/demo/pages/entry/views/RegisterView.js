@@ -1,10 +1,5 @@
 /**
- * Created by zhongzihuan on 2018/11/28.
- * 用户登录页   容器组件
- * （1）主内容容器
- * （2）账户密码登录
- * （3）手机号登录
- * （4）联名登录
+ *
  */
 import React, { Component } from 'react'
 import { connect } from 'mango-web'

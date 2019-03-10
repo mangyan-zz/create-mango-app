@@ -4,8 +4,8 @@
 import React, { Component } from 'react';
 import { connect, Dimens } from 'mango-web';
 import { Texty } from 'mango-motion-web';
-import Images from './assets/Images';
-import Themes from './assets/Themes';
+import Images from '../assets/Images';
+import Themes from '../assets/Themes';
 
 @connect()
 class App extends Component {

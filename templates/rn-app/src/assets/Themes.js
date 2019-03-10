@@ -1,6 +1,5 @@
 /**
- * Created by mangyan on 2018/12/7.
- *
+ * 主题样式资源
  */
 import ColorPalette from './ColorPalette';
 import { Dimens } from 'mango-rn';

@@ -1,5 +1,5 @@
 /**
- * Created by zhongzihuan on 2018/12/25.
+ * 应用全局图片资源
  */
 const Images = {
   logo: require('./images/logo.svg'),

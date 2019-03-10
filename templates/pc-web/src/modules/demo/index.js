@@ -1,4 +1,4 @@
-import ModuleRouter from './conf/ModuleRouter';
+import ModuleRouter from './ModuleRouter';
 
 export {
 	ModuleRouter,

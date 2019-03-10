@@ -1,3 +1,6 @@
+/**
+ * 按需化加载组件
+ */
 import React, { Component } from 'react';
 
 export default function AsyncComponent(importComponent) {

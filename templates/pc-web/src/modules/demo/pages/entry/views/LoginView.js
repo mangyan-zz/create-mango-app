@@ -1,19 +1,12 @@
 /**
- * Created by zhongzihuan on 2018/11/28.
- * 用户登录页   容器组件
- * （1）主内容容器
- * （2）账户密码登录
- * （3）手机号登录
- * （4）联名登录
+ *
  */
 import React, { Component } from 'react';
 import { connect, Dimens, Mango, RouterUtils } from 'mango-web';
 
 import { Alert, Button, Checkbox, Col, Form, Input, Row, Tabs, message } from 'antd';
-import Strings from '../../../conf/Strings';
-import AuthorityUtils from '../../../../../utils/AuthorityUtils';
-import LocalStorageUtils from '../../../../../utils/LocalStorageUtils';
-import ModuleCode from '../../../conf/ModuleCode';
+import Strings from '../../../res/Strings';
+import ModuleCode from '../../../res/ModuleCode';
 
 const TabPane = Tabs.TabPane;
 
@@ -30,8 +23,6 @@ class LoginView extends Component {
 	componentDidUpdate() {
 		const {dataLoginRsp} = this.props.userPublic;
 		if (dataLoginRsp) {
-			//响应成功,跳转到首页,并保存当前的登录状态
-			AuthorityUtils.setToken('token');
 			RouterUtils.push('/');
 		}
 	}

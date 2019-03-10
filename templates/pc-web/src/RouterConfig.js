@@ -6,7 +6,7 @@ import { Router, Route, Switch } from 'mango-web/router';
 
 import { ModuleRouter as DemoModuleRouter } from './modules/demo';
 import { RouterUtils } from 'mango-web';
-import App from './App';
+import App from './layout/App';
 import ErrorPage from './layout/ErrorPage';
 
 let appHistory = null;

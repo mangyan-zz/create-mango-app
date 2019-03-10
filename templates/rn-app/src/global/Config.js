@@ -1,5 +1,5 @@
 /**
- * Created by zhongzihuan on 2019/3/7.
+ * 应用全局常量
  */
 
 const ENV = {DEV: 'dev', CHECK: 'check', RELEASE: 'release'};

@@ -1,8 +1,5 @@
 /**
- * Created by zhongzihuan on 2018/11/30.
  * 应用字符串资源
- * （1）不要复用
- * （2）需要符合良好的文件结构：标明使用到的文件名
  */
 const AppStrings = {
 	//ErrorPage

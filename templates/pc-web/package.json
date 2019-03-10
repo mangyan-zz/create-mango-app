@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
-		"mango-web": "^0.0.6",
+		"mango-web": "^0.0.8",
 		"mango-motion-web": "0.0.4"
 	},
 	"scripts": {

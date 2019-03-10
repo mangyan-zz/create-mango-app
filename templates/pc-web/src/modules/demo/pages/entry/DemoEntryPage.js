@@ -1,5 +1,5 @@
 /**
- * Created by zhongzihuan on 2018/12/7.
+ *
  */
 import React, { Component, Fragment } from 'react';
 import { connect, Dimens } from 'mango-web';
