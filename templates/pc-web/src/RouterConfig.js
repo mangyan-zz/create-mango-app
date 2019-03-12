@@ -26,7 +26,7 @@ const RouterConfig = ({history, app}) => {
 				<Route exact path="/" component={App}/>
 
 				{/*Demo模块*/}
-				<Route path="/new" render={(props) => (<DemoModuleRouter {...props} app={app}/>)}/>
+				<Route path="/demo" render={(props) => (<DemoModuleRouter {...props} app={app}/>)}/>
 
 				{/*Error界面*/}
 				<Route path="/ErrorPage" component={ErrorPage}/>

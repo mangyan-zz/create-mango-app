@@ -1,14 +1,13 @@
 /**
  * 模块公共样式
  */
-import { Dimens } from 'mango-rn';
+import { Dimens } from 'mango-web';
 
 const Styles = {
 	input: {
-		height: Dimens.p80,
-		paddingLeft: Dimens.p20,
-		paddingRight: Dimens.p20,
-		borderBottomWidth: Dimens.aline,
+		height: Dimens.d80,
+		paddingLeft: Dimens.d20,
+		paddingRight: Dimens.d20,
 	},
 };
 

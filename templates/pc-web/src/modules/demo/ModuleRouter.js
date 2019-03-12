@@ -7,6 +7,7 @@ import { Mango } from 'mango-web';
 import DemoEntryPage from './pages/entry/DemoEntryPage';
 
 import DemoPublicModel from './models/DemoPublicModel';
+import DemoEntryModel from './pages/entry/DemoEntryModel';
 
 export default class ModuleRouter extends Component {
 
@@ -21,6 +22,7 @@ export default class ModuleRouter extends Component {
 					exact
 					path={`${match.path + '/DemoEntryPage'}`}
 					component={DemoEntryPage}
+					registerModel={Mango.registerModel(app, DemoEntryModel)}
 				/>
 			</div>
 		);

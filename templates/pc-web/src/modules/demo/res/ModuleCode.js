@@ -1,11 +1,6 @@
 const ModuleCode = {
 	//namespace
-	userPublic: 'userPublic',
-	userPrivate: 'userPrivate',
-	setting: 'userSetting',
-	userCenterModel: 'userCenterModel',
-	userRegister: 'userRegister',
-
+	a: 'demoA',
 };
 
 export default ModuleCode;
